@@ -9,9 +9,9 @@ public class Coordinates
 
 public enum SensorSignal
 {
-    moisture,
-    temperature,
-    light
+    Moisture,
+    Temperature,
+    Light
 }
 
 public class SensorData
@@ -31,11 +31,11 @@ public class Program
         
 
         // Приклад використання SensorData
-        SensorData date_temperature = new SensorData { Signal_type = SensorSignal.temperature, Value = 25.5 };
+        SensorData date_temperature = new SensorData { Signal_type = SensorSignal.Temperature, Value = 25.5 };
         Console.WriteLine($"Данi датчика: Тип сигналу - {date_temperature.Signal_type}, Значення - {date_temperature.Value}`C");
 
         // Приклад використання SensorData
-        SensorData date_moisture = new SensorData { Signal_type = SensorSignal.moisture, Value = 80 };
+        SensorData date_moisture = new SensorData { Signal_type = SensorSignal.Moisture, Value = 80 };
         Console.WriteLine($"Данi датчика: Тип сигналу - {date_moisture.Signal_type}, Значення - {date_moisture.Value}%");
     }
 }
